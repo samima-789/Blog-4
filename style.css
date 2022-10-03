@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+}
+
+.row{
+  width: 80%;
+  margin: auto;
+}
+
+.header{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.header h1{
+  padding: 20px;
+  color: chocolate;
+}
+
+.header p{
+  color: grey;
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  auto;
+}
+
+.content .card{
+  flex: 1;
+  margin: 50px 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.content .card:hover{
+  box-shadow: 2px 2px 8px 2px grey;
+  transform: translateY(-5px);
+}
+
+.content .card img{
+  width: 100%;
+  height: auto;
+}
+
+.content .card h4{
+  display: table;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+  color: chocolate;
+}
+
+.content .card p{
+  text-align: center;
+}
+
+.content .card .btn{
+  display: table;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  background-color: chocolate;
+  color: white;
+}
+
+.content .card .btn:hover{
+  background-color: white;
+  color: chocolate;
+  border: 1px solid chocolate;
+}
+
+
+@media screen and (max-width: 768px){
+  .content{
+    flex-direction: column;
+  }
+}
